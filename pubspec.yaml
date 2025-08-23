@@ -13,12 +13,12 @@ dev_dependencies:
 environment:
   flutter: '>=1.17.0'
   sdk: ^3.0.0
-homepage: https://github.com/normidar/flutter_pkg_temp
-name: flutter_pkg_temp
+homepage: https://github.com/normidar/app_lang_selector
+name: app_lang_selector
 topics:
-  - a
-  - b
-  - c
-  - d
-  - e
+  - language
+  - localization
+  - region
+  - global
+  - globalization
 version: 0.0.1
