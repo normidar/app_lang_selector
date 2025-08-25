@@ -55,7 +55,7 @@ class AppLangSelectPage extends ConsumerWidget {
         context.savedLocale?.languageCode ??
         'system_system';
     return Scaffold(
-      appBar: AppBar(title: Text('$pkgName:select_lang_page'.tr())),
+      appBar: AppBar(title: Text('select_lang_page'.tr())),
       body: ListView(
         children: [
           ListTile(
@@ -75,7 +75,7 @@ class AppLangSelectPage extends ConsumerWidget {
                     .setLang('system_system');
               },
             ),
-            title: Text('$pkgName:follow_system'.tr()),
+            title: Text('follow_system'.tr()),
           ),
           ...context.supportedLocales.map(
             (e) => ListTile(

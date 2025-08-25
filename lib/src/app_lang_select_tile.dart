@@ -12,7 +12,7 @@ class AppLangSelectTile extends ConsumerWidget {
     final _ = ref.watch(selectingLangProvider);
     return ListTile(
       leading: const Icon(Icons.language),
-      title: Text('$pkgName:select_lang'.tr()),
+      title: Text('select_lang'.tr()),
       onTap: () {
         Navigator.push(
           context,

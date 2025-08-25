@@ -1,5 +1,5 @@
 {
-    "app_lang_selector:select_lang_page": "Выбор Языка",
-    "app_lang_selector:follow_system": "Следовать Системе",
-    "app_lang_selector:select_lang": "Выбрать Язык"
+    "select_lang_page": "Выбор Языка",
+    "follow_system": "Следовать Системе",
+    "select_lang": "Выбрать Язык"
 }
