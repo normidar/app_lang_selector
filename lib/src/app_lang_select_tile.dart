@@ -18,7 +18,7 @@ class AppLangSelectTile extends ConsumerWidget {
         Locale('pt', 'PT'),
         Locale('es', 'ES'),
       ],
-      path: 'assets/localizations',
+      path: 'packages/app_lang_selector/assets/localizations',
       fallbackLocale: const Locale('en', 'US'),
       child: ListTile(
         leading: const Icon(Icons.language),
