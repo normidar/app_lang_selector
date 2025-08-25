@@ -12,32 +12,34 @@ class AppLangSelectTile extends ConsumerWidget {
     final _ = ref.watch(selectingLangProvider);
 
     () async {
-      final json = await rootBundle.loadString('packages/app_lang_selector/assets/localizations/en.json');
+      final json = await rootBundle.loadString(
+          'packages/app_lang_selector/assets/localizations/en-US.json');
       print('json:::');
       print(json);
     }();
     return EasyLocalization(
-        supportedLocales: const [
-          Locale('ja', 'JP'),
-          Locale('en', 'US'),
-          Locale('zh', 'CN'),
-          Locale('tr', 'TR'),
-          Locale('pt', 'PT'),
-          Locale('es', 'ES'),
-        ],
-        path: 'packages/app_lang_selector/assets/localizations',
-        fallbackLocale: const Locale('en', 'US'),
-        child: ListTile(
-      leading: const Icon(Icons.language),
-      title: Text('select_lang'.tr()),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute<void>(
-            builder: (context) => const AppLangSelectPage(),
-          ),
-        );
-      },
-    ),);
+      supportedLocales: const [
+        Locale('ja', 'JP'),
+        Locale('en', 'US'),
+        Locale('zh', 'CN'),
+        Locale('tr', 'TR'),
+        Locale('pt', 'PT'),
+        Locale('es', 'ES'),
+      ],
+      path: 'packages/app_lang_selector/assets/localizations',
+      fallbackLocale: const Locale('en', 'US'),
+      child: ListTile(
+        leading: const Icon(Icons.language),
+        title: Text('select_lang'.tr()),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute<void>(
+              builder: (context) => const AppLangSelectPage(),
+            ),
+          );
+        },
+      ),
+    );
   }
 }
