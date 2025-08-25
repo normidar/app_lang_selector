@@ -31,6 +31,5 @@ topics:
   - localization
   - internationalization
   - i18n
-  - ui
-  - widget
+  - globalization
 version: 0.0.1
