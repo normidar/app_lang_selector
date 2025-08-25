@@ -1,6 +1,5 @@
 ---
 dependencies:
-  auto_exporter_annotation: any
   easy_localization: ^3.0.7
   flutter:
     sdk: flutter
