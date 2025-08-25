@@ -1,24 +1,35 @@
 ---
 dependencies:
+  easy_localization: ^3.0.7
   flutter:
     sdk: flutter
-description: A Flutter package template.
+  flutter_riverpod: ^2.6.1
+  riverpod_annotation: ^2.6.1
+  riverpod_helper: ^0.0.3
+description: A Flutter package for easy language selection with beautiful UI and state management support.
 dev_dependencies:
-  auto_exporter: ^4.0.0
-  build_runner: ^2.0.0
-  flutter_lints: any
+  auto_exporter: any
+  build_runner: ^2.4.12
+  custom_lint: ^0.7.5
+  flutter_lints: ^4.0.0
   flutter_test:
     sdk: flutter
+  riverpod_generator: ^2.6.1
+  riverpod_lint: ^2.6.1
   very_good_analysis: any
 environment:
   flutter: '>=1.17.0'
   sdk: ^3.0.0
-homepage: https://github.com/normidar/flutter_pkg_temp
-name: flutter_pkg_temp
+flutter:
+  assets:
+    - assets/localizations/
+homepage: https://github.com/normidar/app_lang_selector
+issue_tracker: https://github.com/normidar/app_lang_selector/issues
+name: app_lang_selector
 topics:
-  - a
-  - b
-  - c
-  - d
-  - e
+  - language
+  - localization
+  - internationalization
+  - i18n
+  - globalization
 version: 0.0.1

@@ -1,0 +1,9 @@
+{
+  "app_title": "Ví dụ Bộ chọn Ngôn ngữ",
+  "welcome_message": "Chào mừng bạn đến với App Lang Selector!",
+  "description": "Đây là một minh họa của gói app_lang_selector. Bạn có thể dễ dàng thay đổi ngôn ngữ của ứng dụng bằng cách sử dụng bộ chọn ngôn ngữ bên dưới.",
+  "current_language": "Ngôn ngữ hiện tại:",
+  "select_lang": "Chọn Ngôn ngữ",
+  "select_lang_page": "Cài đặt Ngôn ngữ",
+  "follow_system": "Theo Ngôn ngữ Hệ thống"
+}
