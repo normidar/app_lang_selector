@@ -1,0 +1,9 @@
+{
+  "app_title": "Esempio Selettore Lingua",
+  "welcome_message": "Benvenuto in App Lang Selector!",
+  "description": "Questa è una dimostrazione del pacchetto app_lang_selector. Puoi facilmente cambiare la lingua dell'app usando il selettore di lingua qui sotto.",
+  "current_language": "Lingua Attuale:",
+  "select_lang": "Seleziona Lingua",
+  "select_lang_page": "Impostazioni Lingua",
+  "follow_system": "Segui Lingua di Sistema"
+}
