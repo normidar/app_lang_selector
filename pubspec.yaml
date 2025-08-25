@@ -30,3 +30,7 @@ topics:
   - global
   - globalization
 version: 0.0.1
+
+flutter:
+  assets:
+    - assets/localizations/
