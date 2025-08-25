@@ -9,17 +9,29 @@ class AppLangSelectTile extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final _ = ref.watch(selectingLangProvider);
-    return ListTile(
-      leading: const Icon(Icons.language),
-      title: Text('select_lang'.tr()),
-      onTap: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute<void>(
-            builder: (context) => const AppLangSelectPage(),
-          ),
-        );
-      },
+    return EasyLocalization(
+      supportedLocales: const [
+        Locale('ja', 'JP'),
+        Locale('en', 'US'),
+        Locale('zh', 'CN'),
+        Locale('tr', 'TR'),
+        Locale('pt', 'PT'),
+        Locale('es', 'ES'),
+      ],
+      path: 'packages/app_lang_selector/assets/localizations',
+      fallbackLocale: const Locale('en', 'US'),
+      child: ListTile(
+        leading: const Icon(Icons.language),
+        title: Text('select_lang'.tr()),
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute<void>(
+              builder: (context) => const AppLangSelectPage(),
+            ),
+          );
+        },
+      ),
     );
   }
 }
