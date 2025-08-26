@@ -1,4 +1,4 @@
-import 'package:app_lang_selector/app_lang_selector.dart';
+import 'package:app_lang_selector/app_lang_selector.dart' as als;
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -24,7 +24,9 @@ void main() async {
         Locale('ar', 'AE'),
       ],
       path: 'assets/localizations',
-      assetLoader: const PkgsAssetLoader(packages: ['app_lang_selector']),
+      assetLoader: const als.PkgsAssetLoader(packages: [
+        als.packageName,
+      ]),
       fallbackLocale: const Locale('en', 'US'),
       child: const ProviderScope(
         child: MyApp(),
@@ -90,7 +92,7 @@ class MyHomePage extends ConsumerWidget {
                       textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 24),
-                    const AppLangSelectTile(),
+                    const als.AppLangSelectTile(),
                   ],
                 ),
               ),
