@@ -24,6 +24,7 @@ void main() async {
         Locale('ar', 'AE'),
       ],
       path: 'assets/localizations',
+      assetLoader: const PkgsAssetLoader(packages: ['app_lang_selector']),
       fallbackLocale: const Locale('en', 'US'),
       child: const ProviderScope(
         child: MyApp(),
