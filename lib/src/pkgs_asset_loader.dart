@@ -16,12 +16,14 @@ class PkgsAssetLoader extends AssetLoader {
   @override
   Future<Map<String, dynamic>?> load(String path, Locale locale) async {
     final localeData = await loadLocale(path, locale);
-    final packageDatas = <String, Map<String, dynamic>>{};
+    var packageDatas = <String, dynamic>{};
     for (final package in packages) {
-      final packageData = await loadPackage(package, locale);
-      packageDatas[package] = packageData;
+      final packageData =
+          ((await loadPackage(package, locale)) as Map<String, dynamic>?) ?? {};
+      packageDatas = {...packageDatas, ...packageData};
     }
     final mergedData = {...localeData, ...packageDatas};
+    EasyLocalization.logger.debug('Merged data: $mergedData');
     return mergedData;
   }
 
