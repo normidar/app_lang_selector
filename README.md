@@ -21,6 +21,7 @@ A Flutter package for easy language selection with beautiful UI and state manage
 ## Supported Languages
 
 The package includes native names for 40+ languages including:
+
 - English, 日本語, 简体中文, 繁體中文, 한국어
 - Español, Français, Deutsch, Italiano, Português
 - Русский, العربية, Tiếng Việt, हिंदी, Polski
@@ -40,6 +41,7 @@ dependencies:
 ```
 
 Then run:
+
 ```bash
 flutter pub get
 ```
@@ -102,6 +104,7 @@ flutter run
 ```
 
 The example demonstrates:
+
 - Complete app setup with multiple languages
 - Integration with easy_localization
 - Language selection UI
