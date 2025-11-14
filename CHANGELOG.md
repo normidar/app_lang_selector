@@ -1,3 +1,11 @@
+## 0.0.3
+
+- Fix import bug.
+
+## 0.0.2
+
+- Add support for tr-TR language
+
 ## 0.0.1
 
 - Initial release of app_lang_selector

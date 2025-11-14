@@ -2,8 +2,5 @@
   "app_title": "语言选择器示例",
   "welcome_message": "欢迎使用 App Lang Selector！",
   "description": "这是 app_lang_selector 包的演示。您可以使用下面的语言选择器轻松更改应用程序的语言。",
-  "current_language": "当前语言:",
-  "select_lang": "选择语言",
-  "select_lang_page": "语言设置",
-  "follow_system": "跟随系统语言"
+  "current_language": "当前语言:"
 }
