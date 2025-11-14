@@ -50,7 +50,7 @@ class AppLangSelectPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final selectedLang = ref.watch(selectingLangProvider) ??
+    final selectedLang = ref.watch<String?>(selectingLangProvider) ??
         context.savedLocale?.languageCode ??
         'system_system';
     return Scaffold(
@@ -61,7 +61,9 @@ class AppLangSelectPage extends ConsumerWidget {
             onTap: () async {
               Intl.defaultLocale = context.locale.languageCode;
               await context.resetLocale();
-              ref.read(selectingLangProvider.notifier).setLang('system_system');
+              ref
+                  .read<SelectingLang>(selectingLangProvider.notifier)
+                  .setLang('system_system');
             },
             leading: Radio(
               value: 'system_system',
@@ -70,7 +72,7 @@ class AppLangSelectPage extends ConsumerWidget {
                 Intl.defaultLocale = context.locale.languageCode;
                 await context.resetLocale();
                 ref
-                    .read(selectingLangProvider.notifier)
+                    .read<SelectingLang>(selectingLangProvider.notifier)
                     .setLang('system_system');
               },
             ),
@@ -88,7 +90,7 @@ class AppLangSelectPage extends ConsumerWidget {
                     Intl.defaultLocale = value.languageCode;
                     await context.setLocale(value.toLocale());
                     ref
-                        .read(selectingLangProvider.notifier)
+                        .read<SelectingLang>(selectingLangProvider.notifier)
                         .setLang(value.toString());
                   }
                 },
@@ -97,7 +99,7 @@ class AppLangSelectPage extends ConsumerWidget {
                 Intl.defaultLocale = e.languageCode;
                 await context.setLocale(e);
                 ref
-                    .read(selectingLangProvider.notifier)
+                    .read<SelectingLang>(selectingLangProvider.notifier)
                     .setLang(LangCode.fromLocale(e).toString());
               },
             ),
