@@ -15,7 +15,7 @@ dependencies:
   app_lang_selector:
     path: ../
   easy_localization: ^3.0.7
-  flutter_riverpod: ^2.6.1
+  flutter_riverpod: ^3.0.3
 
 dev_dependencies:
   flutter_test:

@@ -6,20 +6,52 @@ part of 'selecting_lang.dart';
 // RiverpodGenerator
 // **************************************************************************
 
+// GENERATED CODE - DO NOT MODIFY BY HAND
+// ignore_for_file: type=lint, type=warning
+
+@ProviderFor(SelectingLang)
+const selectingLangProvider = SelectingLangProvider._();
+
+final class SelectingLangProvider
+    extends $NotifierProvider<SelectingLang, String?> {
+  const SelectingLangProvider._()
+      : super(
+          from: null,
+          argument: null,
+          retry: null,
+          name: r'selectingLangProvider',
+          isAutoDispose: false,
+          dependencies: null,
+          $allTransitiveDependencies: null,
+        );
+
+  @override
+  String debugGetCreateSourceHash() => _$selectingLangHash();
+
+  @$internal
+  @override
+  SelectingLang create() => SelectingLang();
+
+  /// {@macro riverpod.override_with_value}
+  Override overrideWithValue(String? value) {
+    return $ProviderOverride(
+      origin: this,
+      providerOverride: $SyncValueProvider<String?>(value),
+    );
+  }
+}
+
 String _$selectingLangHash() => r'6cfa67505b386097fd1cf974302ab219f71718d4';
 
-/// See also [SelectingLang].
-@ProviderFor(SelectingLang)
-final selectingLangProvider = NotifierProvider<SelectingLang, String?>.internal(
-  SelectingLang.new,
-  name: r'selectingLangProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$selectingLangHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef _$SelectingLang = Notifier<String?>;
-// ignore_for_file: type=lint
-// ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member, deprecated_member_use_from_same_package
+abstract class _$SelectingLang extends $Notifier<String?> {
+  String? build();
+  @$mustCallSuper
+  @override
+  void runBuild() {
+    final created = build();
+    final ref = this.ref as $Ref<String?, String?>;
+    final element = ref.element as $ClassProviderElement<
+        AnyNotifier<String?, String?>, String?, Object?, Object?>;
+    element.handleValue(ref, created);
+  }
+}

@@ -8,7 +8,7 @@ class AppLangSelectTile extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final _ = ref.watch(selectingLangProvider);
+    final _ = ref.watch<String?>(selectingLangProvider);
 
     return ListTile(
       leading: const Icon(Icons.language),
