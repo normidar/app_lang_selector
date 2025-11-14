@@ -1,3 +1,7 @@
+## 0.1.0
+
+- Update riverpod dependencies.
+
 ## 0.0.3
 
 - Fix import bug.
